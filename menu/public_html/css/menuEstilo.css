@@ -1,0 +1,107 @@
+/* 
+    Created on : 27-09-2019, 9:16:53
+    Author     : VSV
+    Propósito  : Manejar los estilos del menú
+*/
+*{
+    background-color: #F4EBBE;
+}
+
+ul{
+    list-style: cross-fade;
+    padding: 0;
+    margin:0;
+    position: absolute; /*Oculta los subitems?*/
+}
+
+li{
+    display: inline-block; /*Que todo quede en una linea*/
+    float: left;
+    margin-right: 1px;
+}
+
+li a{ /*se trabajan los a dentro de los li*/
+    display:block;
+    min-width: 140px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #75704E;
+    color: #CACC90;
+    text-decoration: none;
+}
+
+li:hover a{
+    background:#8B4828 ;
+    color: #F4EBBE;
+}
+
+li:hover ul a{
+    background: #5A352A;
+    height: 40px;
+    line-height: 40px;
+    
+}
+
+li:hover ul a:hover{
+    background: #CACC90;
+    color: #F4EBBE;
+}
+
+li ul{
+    display: none;
+}
+
+li ul li {
+    display: block;
+    float: none;
+}
+
+li ul li a{
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+}
+
+ul li a:hover + .hidden, .hidden:hover{
+    display: block;
+}
+
+.show-menu{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background-color: #19c589;
+    text-align: center;
+    padding: 10px 0px;
+    display: none;
+}
+
+input[type=checkbox]{
+    display:none;
+}
+
+input[type=checkbox]:checked ~ #menu{
+    display:block;
+}
+
+/*ESTILOS RESPONSIVOS*/
+@media screen and (max-width: 760px){
+    ul{
+        position: static;
+        display:none;
+    }
+    
+    li{
+        margin-bottom: 1px;
+    }
+    
+    ul li, li a{
+        width: 100%;
+    }
+    
+    .show-menu{
+        display: block;
+    }
+}
