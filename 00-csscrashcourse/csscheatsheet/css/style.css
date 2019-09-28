@@ -89,6 +89,7 @@ a:visited{
 	font-style:italic;
 	text-decoration:underline;
 	text-transform:uppercase;
+	text-align: right;
 	letter-spacing: 0.2em;
 	word-spacing: 1em;
 }

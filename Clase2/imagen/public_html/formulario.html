@@ -1,12 +1,7 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Que hacer</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -18,6 +13,78 @@ and open the template in the editor.
             <form name="form2" action="saludar.html" method="POST">
                 <input type="submit" value="Saludar" name="btnSaludar2" />
             </form>
+        </div>
+        <div>
+            <br>
+            <form name="drmDespedir" action="despedir.html" method="GET">
+                <input type="submit" value="Despedir" name="despedir" />
+            </form> 
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <form action="results.html" method="POST">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name"
+                       placeholder="Ingresa nombre" >
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <button type="submit">Submit</button>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" >
+                </div>
+                <div>
+                    <label for="age">Age</label>
+                    <input type="number" name="age" id="age" min="1" max="200" step="5">
+                </div>
+                <div>
+                    <label for="fecha">Birthdate</label>
+                    <input type="date" name="date" id="fecha">
+                </div>
+                Favorite Food
+                <div>
+                    <input type="checkbox" name="banana" id="banana">
+                    <label for="banana">Banana</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="apple" id="apple">
+                    <label for="apple">Apple</label>
+                </div>
+                <div>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+                </div>
+                <div>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                </div>
+                <div>
+                    <label for="bio">Bio</label>
+                    <textarea id="bio" name="bio"></textarea>
+                </div>
+                <div>
+                    <label for="eyeColor">Eye Color</label>
+                    <select name="eyeColor" id="eyeColor">
+                        <option label="Red" value="Red"></option>
+                        <option label="Blue" value="Blue"></option>
+                    </select>
+                </div>
+                <div>
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone"></input>
+                </div>
+                <div>
+                    <label for="url">URL</label>
+                    <input type="url" id="url" name="url"></input>
+                </div>
+                <div>
+                    <label for="color">Color</label>
+                    <input type="color" id="color" name="color"></input>
+                </div>
+                <div>
+                    <label for="file">File</label>
+                    <input type="file" id="file" name="file"></input>
+                </div>
+            </form>
+            
         </div>
     </body>
 </html>
