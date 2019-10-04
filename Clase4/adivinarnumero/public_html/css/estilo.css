@@ -1,0 +1,59 @@
+*{
+    font-family: helvetica;
+    background-color: #ffffff;
+}
+
+.titulo{
+    color: #4C5B61;
+    margin-left: 30px;
+}
+.ingreso{
+    margin: 3px;
+    padding: 10px;
+    color: #4C5B61;
+}
+
+.etiqueta{
+    width: 100em;
+    text-align: right;
+}
+
+.descripcion{
+    margin:20px;
+    padding: 10px;
+}
+
+.formulario{
+    margin: 20px;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 40px #d0d0d0;
+    border-radius: 25px;
+}
+
+.btnPrincipal{
+    border-radius: 10px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    background-color: #A9DFE2;
+    font-size: 10pt;
+    border: none;
+    margin-left:12px;
+}
+
+.cuadroEntrada{
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    width: 15em;
+    height: 2em;
+    
+}
+
+label{
+    
+}
+

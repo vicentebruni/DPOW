@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ejercicio 1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilo.css">
+        <script src="js/calculos.js"></script>
+    </head>
+    <body>
+        <div>
+            <h1 class="titulo">Ejercicio 1:</h1>
+        </div>
+        <div>
+            <p class="descripcion">
+                Escriba una pagina que combine html, css, javascript que permita
+                ingresar la informacion de una persona como sigue
+                <br>- nombre
+                <br>- honorario
+                <br>- boton aceptar
+                <br>Al dar clic en el boton una funcion en js permitir mostrar por pantalla el valor de la retencion y el liquido a pagar.
+            </p>
+        </div>
+        <div class="formulario">
+        <div class="ingreso">
+            <label class="etiqueta">Nombre: </label><br>
+            <input class="cuadroEntrada" type="text" id="txtNombre"/>
+        </div>
+        <div class="ingreso">
+            <label class="etiqueta">Honorario:</label><br>
+            <input class="cuadroEntrada" type="text" id="txtHonorario"/>
+        </div>
+        <br>
+        <div>
+            <button class="btnPrincipal" onclick="calcular();">
+                Calcular
+            </button>
+        </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Adivinar número con tiempo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilo.css">
+        <script src="js/funciones.js"></script>
+        <script>
+            setInterval(function(){document.getElementById("borra").innerHTML="";},3000);
+            setInterval(function(){document.getElementById("borra").innerHTML="otro";},5000);
+        </script>
+    </head>
+    <body>
+        <div class="formulario">
+        
+        <div>
+            <label>
+                Recuerda este número:
+            </label> <br>
+            <label class="etiqueta" id="borra">123</label>
+        </div>
+        <div>
+            <label>
+                Ingresa el número que recuerdes:
+            </label><br>
+            <input class="cuadroEntrada" type="text" id="numeroRecordado">
+        </div>
+        </div>
+    </body>
+</html>
