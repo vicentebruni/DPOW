@@ -8,18 +8,24 @@
         <script src="js/funciones.js"></script>
     </head>
     <body>
+        <h1>Ejercicio 3</h1>
+        <p class="descripcion">Ingrese un rango de números entre los cuales
+        se generará un número, y luego intente adivinar
+        el número generado en la ventana de dialogo.</p>
         <div class="formulario">
         <div>
-            <label>Ingrese numero minimo:</label><br>
-            <input class="cuadroEntrada" type="text" id="numminimo">
+            <label>Ingrese número minimo:<br></label>
+            <input type="number" id="numminimo">
         </div>
+            <br>
         <div>
-            <label>Ingrese numero máximo:</label><br>
-            <input class="cuadroEntrada" type="text" id="nummax">
+            <label>Ingrese número máximo:<br></label>
+            <input type="number" id="nummax">
         </div>
             <div>
                 <br>
                 <input type="button" class="btnPrincipal" value="Calcular" onclick="adivinar();">
+                <input type="button" class="btnSecundario" value="Salir" onclick="adivinar();">
             </div>
         </div>
         

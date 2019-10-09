@@ -3,27 +3,19 @@
     background-color: #ffffff;
 }
 
-.titulo{
+h1{
     color: #4C5B61;
     margin-left: 30px;
 }
-.ingreso{
-    margin: 3px;
-    padding: 10px;
-    color: #4C5B61;
-}
-
-.etiqueta{
-    width: 100em;
-    text-align: right;
-}
 
 .descripcion{
-    margin:20px;
-    padding: 10px;
+    padding: 30px;
+    width: 75%;
+    text-align: justify;
+    
 }
-
 .formulario{
+    width: 60%;
     margin: 20px;
     padding: 30px;
     background-color: #ffffff;
@@ -33,17 +25,28 @@
 
 .btnPrincipal{
     border-radius: 10px;
-    padding-left: 28px;
-    padding-right: 28px;
-    padding-top: 9px;
-    padding-bottom: 9px;
+    padding: 9px 28px; /*Padding top & bottom de 9px y left & right 28px*/
     background-color: #A9DFE2;
     font-size: 10pt;
     border: none;
     margin-left:12px;
 }
 
-.cuadroEntrada{
+.btnPrincipal:hover{
+    background-color: #d1edef
+}
+
+.btnSecundario{
+    border-radius: 10px;
+    padding: 9px 28px;
+    background-color: #efefef;
+    font-size: 10pt;
+    border: none;
+    margin-left:12px;
+}
+
+input[type="text"],[type="number"],[type="tel"],[type="email"],
+[type="password"],[type="file"]{
     background-color: #f5f5f5;
     border: none;
     border-radius: 5px;
@@ -53,7 +56,8 @@
     
 }
 
+
 label{
-    
+    text-align: center;
 }
 

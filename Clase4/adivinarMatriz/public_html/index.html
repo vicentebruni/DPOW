@@ -8,7 +8,7 @@
         <script src="js/funciones.js"></script>
         <script>
             setInterval(function(){document.getElementById("borra").innerHTML="";},3000);
-            setInterval(function(){document.getElementById("borra").innerHTML="otro";},5000);
+            setInterval(function(){document.getElementById("borra").innerHTML=num;},5000);
         </script>
     </head>
     <body>
@@ -18,10 +18,10 @@
             <label>
                 Recuerda este número:
             </label> <br>
-            <label class="etiqueta" id="borra">123</label>
+            <label onloadstart="generarNumero();" class="etiqueta" id="borra">123</label>
         </div>
         <div>
-            <label>
+            <label >
                 Ingresa el número que recuerdes:
             </label><br>
             <input class="cuadroEntrada" type="text" id="numeroRecordado">
